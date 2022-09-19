@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://www.seotoolscheck.net/theme/simpleX/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/qrcode.css">
+    <style>
+        * {
+      scrollbar-width: auto;
+      scrollbar-color: #e37575 #ffffff;
+      }
+  
+      /* Chrome, Edge, and Safari */
+      *::-webkit-scrollbar {
+      width: 16px;
+      }
+  
+      *::-webkit-scrollbar-track {
+       background: #ffffff;
+      }
+  
+      *::-webkit-scrollbar-thumb {
+      background-color: #e37575;
+      border-radius: 10px;
+      border: 3px solid #ffffff;
+      }
+      </style>
+</head>
+<body>
+  <header class="header">
+    <a href="home.php" class=""><img src="images/logo.png" width="200px" height="70px"></a>
+    <nav class="navbar">
+      <a href="home.php">Home</a>
+      <a href="home.php#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="home.php#review">Review</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </header>
+
+  <div class="container main-container" style="margin-top: 130px;">
+        <div class="box">
+            <header>
+                <h2 style="font-size: 3rem; font-weight: 600;color: #e8786e;">QR Code Generator</h2>
+              </header>
+              <form>
+                <label for="domain" style="font-size: 20px; color: #e8786e; margin-top: 10px;" >Text to embed in QR Code:</label>
+                <textarea name="txt" rows="5" cols="100" class="form-control" placeholder="Enter text here..."></textarea>
+                <p style="margin-top:10px; font-size: 20px; color: #e8786e;">Image Size :
+                   <select name="size" style=" height: 20px; font-size: 15px">
+      <option value="100x100">100x100</option>
+      <option value="200x200">200x200</option>
+      <option value="300x300" selected>300x300</option>
+      <option value="400x400">400x400</option>
+      <option value="500x500">500x500</option>
+      <option value="600x600">600x600</option>
+      <option value="700x700">700x700</option>
+      <option value="800x800">800x800</option>
+    </select></p>
+    <p><input type="submit" value="Generator QR Code" class="form-control-submit  btn" id="qr-gn" style="width: 50%; margin-left:30%;"></p>
+  </form>
+  <div id="qrcode" style="text-align: center; margin-top: 3rem;">
+
+  </div>
+</div>
+</div>
+<div class="box-container-main">
+  <div class="xd_top_box mt-3">
+      <h2 style="font-size: 3rem; font-weight: 600;color: #e8786e;"> About QR Code Generator </h2>
+      <article style="font-size: 16px; text-align: justify;">
+  The QR code generator is a software which converts website address into the barcode. It helps in sharing information easily. It has the quality to encode over 4000 characters in a two-dimensional barcode. QR code is a short form of quick response code which directly means that the code which is used for quick response to reach the destination page or website address. We use the QR code because it is easy to scan and share. Nowadays it is multiplied exponentially as a  vital component of every self-respecting advertisement. It is the easiest way for the customer or a user who wants to go to the website address without seeing Ads or face any other problem. QR code is now vital marketing tool in comparison to that time when they had just find their way into the market. But now they have become an essential part of any campaign or marketing or even for prominent individuals. It is important because it is very useful for both company and customers. They use it to store data of thousands of characters into a small graphical barcode which is very convenient to distribute and accesible for everyone by a smartphone. For the information of almost all the latest gadgets have the bar code on them.
+</article>
+<br>
+
+<h2 style="font-size: 2rem; font-weight: 600; color: #e8786e;">Importance</h2>
+          <article style="font-size: 16px; text-align: justify;">QR code is important because of its vast use in all technical types of markets in which we work technically or smartly. They are important for businessman in their business cards that contains contact details of all kinds. And they are important for manufacturing companies, in inventory cards, in visiting card of enterprises containing information. QR code generator are also used for simple text like welcome messages at conference, meetings, official function, it is vastly used for email address in personal or business accounts, URL's, that is a website and web pages. Links to Apps by which it take people directly to download these app's which is the tricky action. One of the important and modern use of QR code is in payment systems like the information of the bank accounts and credit cards are stored in it. Basic uses are in Wi-Fi authentication which make easy to connect the network and sharing apps which easily connect with other devices through verification by the QR code.
+          </article>
+        </div>
+      </div>
+
+      <!--footer section start here-->
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Our Investment Partners </h3>
+        <a href="https://fearlessjournalism.com/"> <i class="fas fa-arrow-left"></i>Fearless Jouranlism </a>
+        <a href="https://Karoblogging.in"> <i class="fas fa-arrow-left"></i>Karo Blogging</a>
+        <a href="https://sportsinspect.live"> <i class="fas fa-arrow-left"></i>Sports Inspect</a>         
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="home.php"> <i class="fas fa-arrow-right"></i>home</a>
+        <a href="home.php#services"> <i class="fas fa-arrow-right"></i>services</a>
+        <a href="about.html"> <i class="fas fa-arrow-right"></i>about</a>
+        <a href="home.php#review"> <i class="fas fa-arrow-right"></i>review</a>
+        <a href="contact.html"> <i class="fas fa-arrow-right"></i>contact</a>
+      </div>
+
+      <div class="box">
+        <h3 style="text-align: center; margin-left: 85px;">our services</h3>
+        <a href="rank.php"> <i class="fas fa-check"></i>Alexa Rank checker</a>
+        <a href="wordcounter.html"> <i class="fas fa-check"></i>Word Counter</a>
+        <a href="audit_tool.php"> <i class="fas fa-check"></i>Robot.txt generator</a>
+        <a href="domainage.html"> <i class="fas fa-check"></i>Domain age checker</a>
+      </div>
+      <div class="box ">       
+        <br>
+        <br><br><br>   
+        <a href="amazon.html"> <i class="fas fa-check"></i>Amazon Affiliate Link</a>
+        <a href="password.html"> <i class="fas fa-check"></i>Password Checker</a>
+        <a href="article.php"> <i class="fas fa-check"></i>Article Rewriter</a>
+        <a href="qrcode.html"> <i class="fas fa-check"></i>QR code generator</a>
+
+      </div>
+
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>facebook</a
+        >
+        <a href="#">
+          <i class="fab fa-twitter"></i>Twitter</a
+        >
+        <a href="#/">
+          <i class="fab fa-instagram"></i>instagram</a
+        >
+        <a href="#">
+          <i class="fab fa-github"></i>github</a
+        >
+      </div>
+    </div>
+
+    <div class="credit">
+      created by <span>Seodaddy Team</span> | © all rights reserved
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+<script>
+
+
+  $(function(){
+       $("#qr-gn").click(function(){
+           $("#qrcode").html("");
+           var txt = $.trim($('textarea[name="txt"]').val());
+           if(txt == '') {
+             alert("Please enter text you want to embed in OR Code");
+             return false;
+           }
+           var size = $('select[name="size"]').val();
+           var sizeSplit = size.split('x');
+           var width = sizeSplit[0];
+           var height = sizeSplit[1];
+           generateQRcode(width, height, txt );
+           return false;
+       });
+      
+    function generateQRcode(width, height, text) {
+       $('#qrcode').qrcode({width: width,height: height,text: text});
+    }
+      
+  });
+
+  
+</script>
+</body>
+</html>

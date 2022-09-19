@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap");
+
+:root {
+  --main-color: #e8786e;
+  --black: #555;
+  --light-color: #777;
+  --bg: #fceae9;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-out;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+  overflow-x: hidden;
+}
+.lower-case {
+  text-transform: lowercase;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+/*Navbar*/
+
+.heading {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 4rem;
+  color: var(--black);
+}
+
+.heading span {
+  color: var(--main-color);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  padding: 0 1.5rem;
+}
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+.header .logo {
+  font-size: 2.5rem;
+  color: var(--black);
+  font-weight: bolder;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  margin-left: 2rem;
+  text-decoration: none;
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+}
+/*navbar end*/
+
+.main-container {
+  margin-top: 60px;
+}
+
+.main-index {
+  border: 1px solid #ddd;
+  padding-top: 20px;
+  background-color: #fff;
+}
+
+.form-control {
+  background-color: #ffffff;
+  border: 1px solid #c3e8f4;
+  border-radius: 5px;
+  box-shadow: 0 0 0 4px #f0fbff;
+  box-sizing: border-box;
+  color: #111111;
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 14px !important;
+  box-shadow: rgba(232, 120, 110, 1) 0px 1px 3px 0px !important;
+}
+
+/* button*/
+.btn-info {
+  display: block;
+  margin: auto;
+  font-size: 1.9rem !important;
+  font-weight: 500;
+  background-color: var(--main-color) !important;
+  border: none !important;
+}
+
+/*Result*/
+.widget-box {
+  border: 1px solid #ccc;
+  box-shadow: none;
+  margin: 3px 0;
+  padding: 0;
+}
+.widget-header {
+  background: linear-gradient(to bottom, #fff 0px, #eee 100%) repeat-x scroll 0
+    0 #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+  color: #000;
+  min-height: 38px;
+  padding-left: 12px;
+  position: relative;
+}
+.widget-title {
+  margin-top: 1rem;
+}
+.widget-main {
+  padding: 18px;
+}
+
+.xd_top_box {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  padding-bottom: 18px;
+}
+
+.footer {
+  margin-top: 1rem;
+  background: var(--bg);
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  color: var(--black);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.footer .credit span {
+  color: var(--main-color);
+}

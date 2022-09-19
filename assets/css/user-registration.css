@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap");
+
+:root {
+  --main-color: #e8786e;
+  --black: #555;
+  --light-color: #777;
+  --bg: #fceae9;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-out;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.lower-case {
+  text-transform: lowercase;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 4rem;
+  color: var(--black);
+}
+
+.heading span {
+  color: var(--main-color);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  padding: 0 1.5rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #fff;
+  background: var(--main-color);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0%;
+  background: var(--black);
+  z-index: -1;
+  transition: 0.2s ease-out;
+}
+
+.btn:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  box-shadow: rgba(232, 120, 110, 1) 1px 2px 4px 1px;
+}
+.header .logo {
+  font-size: 2.5rem;
+  color: var(--black);
+  font-weight: bolder;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+}
+
+#menu-btn {
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+  color: var(--main-color);
+  background-color: var(--bg);
+  display: none;
+}
+
+#menu-btn:hover {
+  color: #fff;
+  background: var(--main-color);
+}
+.sign-up-container {
+  border: 1px solid;
+  border-color: #9a9a9a;
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  width: 350px;
+  margin: 40px auto;
+  font-size: 1.5rem;
+}
+
+.page-header {
+  float: right;
+}
+
+.login-signup {
+  margin: 10px;
+  text-decoration: none;
+  float: right;
+}
+
+.login-signup a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.signup-heading {
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.row {
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input.input-box-330 {
+  width: 250px;
+}
+
+.sign-up-container .error {
+  color: #ee0000;
+  padding: 0px;
+  background: none;
+  border: #ee0000;
+}
+
+.sign-up-container .error-field {
+  border: 1px solid #d96557;
+}
+
+.sign-up-container .error:before {
+  content: "*";
+  padding: 0 3px;
+  color: #d8000c;
+}
+
+.error-msg {
+  padding-top: 10px;
+  color: #d8000c;
+  text-align: center;
+}
+
+.success-msg {
+  padding-top: 10px;
+  color: #176701;
+  text-align: center;
+}
+
+input.btn {
+  width: 250px;
+}
+
+.signup-align {
+  margin: 0 auto;
+}
+
+.page-content {
+  font-weight: bold;
+  padding-top: 60px;
+  text-align: center;
+}
+.btn-signup {
+  background-color: #000 !important;
+}
+.btn-signup:hover {
+  background-color: #fff !important;
+  opacity: 0.4;
+  color: #000 !important;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
+  .sign-up-container {
+    width: 70%;
+    height: 30vh;
+    font-size: 1.5rem;
+  }
+}
